@@ -1,0 +1,29 @@
+<%- include('./partials/header.ejs')  %>
+<body>
+  
+    <h2> Welcome to signup page</h2>
+    <%=myMsg    %>
+    <form action="/signup" method="post">
+        <div class="mb-3">
+          <label for="name" class="form-label">User Name</label>
+          <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp">
+         
+        </div>
+
+        <div class="mb-3">
+            <label for="uemail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="uemail" name="email">
+           
+          </div>
+        <div class="mb-3">
+          <label for="upass" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" name="pwd">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</body>
+</html>
